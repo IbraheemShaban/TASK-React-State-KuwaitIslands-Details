@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-export default function Island({ island }) {
+export default function Island({ island, setIsland }) {
   return (
-    <div className="Island">
+    <div onClick={() => setIsland(island)} className="Island">
       <h3>{island.name}</h3>
       {/* YOU HAVE TO CHANGE THE VISITORS COUNT */}
       <p>Visitors 0</p>
